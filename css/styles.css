@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+*{
+    font-family: 'Raleway', sans-serif;
+}
+
+.side{
+    width: 30vw;
+    display: inline-block;
+}
+
+.center{
+    width: 40vw;
+    display: inline-block;
+}
+
+.pan{
+    text-align: center;
+}
+
+
+.center .cbutton.panic{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: red;
+    color: #fff;
+    border: 5px solid darkred;
+    font-size: 40px;
+
+}
+
+.center button.panic:hover,.panic:focus{
+    background-color: darkred;
+}
+
+.center input,select,textarea{
+    display: inline-block;
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.center input[type=radio],label{
+    width: auto;
+}
+
+.center .cbutton{
+    width: 100%;
+    color: #fff;
+    background-color: #ff66cc;
+    border: none;
+    border-radius: 5px;
+    height: 50px;
+    margin-top: 20px;
+}
+
+.center form{
+    padding: 30px;
+    box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.1);
+    /* font-size:15px;  */
+
+}
+
+.unol {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+.unol li {
+    float: left;
+}
+
+.unol li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.unol   li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.active {
+    background-color: #4CAF50;
+}

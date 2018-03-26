@@ -1,0 +1,63 @@
+<html>
+    <head>
+        <title>e-Contact</title>
+        <link rel="stylesheet" href="css/styles.css" media="screen and (min-width: 720px)">
+        <link rel="stylesheet" href="css/mobile.css" media="screen and (max-width: 720px)">
+        <script src="https://cdn.firebase.com/libs/firebaseui/2.6.3/firebaseui.js"></script>
+        <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/2.6.3/firebaseui.css" />
+        
+    </head>
+    <body>
+        
+        <div class="side">
+
+        </div>
+        <div class="center">
+            <!-- <form action="pages/home.html">
+                <h1>Login</h1>
+                <input type="email" name="uname" placeholder="Username" required autofocus autocomplete="true">
+                <input type="password" name="pwd" placeholder="Password" required>
+                <button type="submit">Login</button><br><br>
+                No Account? <a href="pages/register.html">Register Here!</a>
+            </form> -->
+            <div id="firebaseui-auth-container"></div>
+        </div>
+        <div class="side">
+
+        </div>
+
+        <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
+        <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyDd32oCP1k9oQ3RDZw4mNAfl4GbVy996Lk",
+            authDomain: "e-contact123.firebaseapp.com",
+            databaseURL: "https://e-contact123.firebaseio.com",
+            projectId: "e-contact123",
+            storageBucket: "e-contact123.appspot.com",
+            messagingSenderId: "233486071875"
+        };
+        firebase.initializeApp(config);
+        </script>
+        <script type="text/javascript">
+            // FirebaseUI config.
+            var uiConfig = {
+              signInSuccessUrl: '/pages/home.html',
+              signInOptions: [
+                // Leave the lines as is for the providers you want to offer your users.
+                firebase.auth.GoogleAuthProvider.PROVIDER_ID,
+                // firebase.auth.FacebookAuthProvider.PROVIDER_ID,
+                firebase.auth.EmailAuthProvider.PROVIDER_ID,
+                firebase.auth.PhoneAuthProvider.PROVIDER_ID
+              ],
+              // Terms of service url.
+              // tosUrl: '<your-tos-url>'
+            };
+      
+            // Initialize the FirebaseUI Widget using Firebase.
+            var ui = new firebaseui.auth.AuthUI(firebase.auth());
+            // The start method will wait until the DOM is loaded.
+            ui.start('#firebaseui-auth-container', uiConfig);
+          </script>
+    </body>
+</html>

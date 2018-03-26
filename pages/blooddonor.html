@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <title>e-Contact</title>
+        <link rel="stylesheet" href="../css/styles.css" media="screen and (min-width: 720px)">
+        <link rel="stylesheet" href="../css/mobile.css" media="screen and (max-width: 720px)">
+    </head>
+    <body>
+        <ul>
+            <li><a class="active" href="panic.html">Panic</a></li>
+            <li><a href="insurance.html">Insurance</a></li>
+            <li><a href="blooddonor.html">Blood Donor</a></li>
+            <li><a href="update.html">Update</a></li>
+        </ul>
+        <div class="side">
+
+        </div>
+        <div class="center">
+            <form>
+                <h1>Blood Bank</h1>
+               Patient Name: <input type="text"name="patientname" placeholder="name" required autofocus autocomplete="true">
+               Age: <input type="number"name="age"placeholder="age"required>
+               Choose Hospital:<select>
+                    <option value="global">Global</option>
+                    <option value="appolo">Appolo</option>
+                    <option value="miot">Miot</option>
+                    <option value="chettinad">Chettinad</option>
+             </select>
+             <select>
+                    <option >Blood Group</option>
+                    <option value="a+">a+</option>
+                    <option value="a-">a-</option>
+                    <option value="b+">b+</option>
+                    <option value="b-">b-</option>
+                    <option value="ab+">ab+</option>
+                    <option value="ab-">ab-</option>
+                    <option value="o+">o+</option>
+                    <option value="o-">o-</option>
+                </select>
+                Blood units needed:<input type="text" name="bloodunits">
+               Mobile: <input type="number"name="phone"placeholder="phone"required>
+               <input type="radio" name="gender" value="male" id="male"><label for="male">Male</label>
+               <input type="radio" name="gender" value="female" id="female"> <label for="female">Female</label>
+               <input type="radio" name="gender" value="other" id="other"><label for="other">Other</label><br>
+               City: <input type="text"name="city"placeholder="city"required>
+               <button type="submit">Login</button>
+                <button >Reset</button>
+            </form>
+        </div>
+        <div class="side">
+
+        </div>
+    </body>
+</html>
